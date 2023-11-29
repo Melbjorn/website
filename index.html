@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css" >
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <h1 id="title">Learning League of Legends</h1>
+        <p id="description">How far do you want to go?</p> 
+        <div class="form">
+            <form action="mailto:darbeastmaster9292@gmail.com" enctype="text/plain" id="survey-form">
+                <fieldset>
+                    <h3>Basic Info</h3>
+                    <label id="name-label">Name: <input id="name" type="text" name="first-name" placeholder="Enter Your Name" required></label>
+                    <label>Summoner Name: <input type="text" name="summoner-name" placeholder="In Game Name" required></label>
+                    <label id="number-label">Summoner Level: <input id="number" type="number" name="summoner-level" min="30" max="9999" placeholder="30 or above" required></label>
+                    <label id="email-label">Email: <input id="email" type="email" name="email" placeholder="Enter Your Email" required></label>
+                    <label>Role: 
+                        <select id="dropdown" name="role">
+                            <option value="">(select one)</option>
+                            <option value="1">Top</option>
+                            <option value="2">Jungle</option>
+                            <option value="3">Mid</option>
+                            <option value="4">Bot</option>
+                            <option value="5">Support</option>
+                        
+                        </select>
+                    </label>
+                
+                </fieldset>
+                <fieldset class="radio" >
+                    <h3>What are you trying to improve?</h3><h5>(Select One)</h5>
+                    <label><input id="wave" type="radio" name="improve" value="Wave Management"> Wave Management</label>
+                    <label><input id="rotate" type="radio" name="improve" value="Rotation"> Rotation</label>
+                    <label><input id="team-fight" type="radio" name="improve" value="Team Fighting"> Team Fighting</label>
+                    <label><input id="objective" type="radio" name="improve" value="Objective Controll"> Objective Controll</label>
+                    <label><input id="vision" type="radio" name="improve" value="Vision Score"> Vision Score</label>
+                    <label><input id="duel" type="radio" name="improve" value="Dueling"> Dueling</label>
+                </fieldset>
+                <fieldset class="checkbox">
+                    <h3>What are your strengths!</h3><h5>(Select all that apply)</h5>
+                    <label><input type="checkbox" name="strengths" value="Laning Phase"> Laning Phase</label>
+                    <label><input type="checkbox" name="strengths" value="Mid Game"> Mid Game</label>
+                    <label><input type="checkbox" name="strengths" value="Late Game"> Late Game</label>
+                    <label><input type="checkbox" name="strengths" value="Objective Control"> Objective Control</label>
+                    <label><input type="checkbox" name="strengths" value="Creep Score"> Creep Score</label>
+                    <label><input type="checkbox" name="strengths" value="Vision Score"> Vision Score</label>
+                    <label><input type="checkbox" name="strengths" value="Map Awareness"> Map Awareness</label>
+                    
+                    <label>Tell me more:
+                    <textarea name="comments" id="2" cols="64" rows="10" placeholder="hi how are ya"></textarea>
+                    </label>
+                </fieldset>
+                <input id="submit" type="submit" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>
